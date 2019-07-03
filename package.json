@@ -1,5 +1,6 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "repository": "github:pacheco7/expo-file-system-view",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

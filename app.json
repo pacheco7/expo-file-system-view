@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "expo-file-system",
+    "name": "expo-file-system-view",
     "slug": "expo-file-system-view",
     "privacy": "public",
     "sdkVersion": "33.0.0",
