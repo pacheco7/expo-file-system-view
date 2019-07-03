@@ -1,29 +1,23 @@
 {
-  "name": "expo-file-system-view",
-  "description": "",
-  "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
+    "web": "expo start --web",
     "eject": "expo eject"
   },
   "dependencies": {
     "expo": "^33.0.0",
-    "expo-cli": "^2.18.7",
-    "expo-file-system": "^5.0.1",
     "expo-video-player": "^1.2.0",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-vector-icons": "^6.4.2"
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-web": "^0.11.4"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.1.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-native": "^3.7.0"
+    "babel-preset-expo": "^5.1.1"
   },
-  "private": false
+  "private": true
 }

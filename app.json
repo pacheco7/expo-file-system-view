@@ -1,20 +1,28 @@
 {
   "expo": {
-    "name": "file-system-view-demo",
-    "description": "Demo of FileSystemView component",
+    "name": "expo-file-system",
     "slug": "expo-file-system-view",
     "privacy": "public",
-    "sdkVersion": "21.0.0",
+    "sdkVersion": "33.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "primaryColor": "#2188FF",
-    "icon": "./assets/icons/app-icon.png",
-    "loading": {
-      "icon": "./assets/icons/loading-icon.png"
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
-    "packagerOpts": {
-      "assetExts": ["ttf", "mp4"]
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     }
