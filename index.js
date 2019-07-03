@@ -1,7 +1,9 @@
 import React from 'react'
 import { FileSystem, Video, Audio, ImagePicker } from 'expo'
-import VideoPlayer from '@expo/videoplayer'
+import VideoPlayer from 'expo-video-player'
+
 import {
+  Modal,
   TouchableOpacity,
   View,
   Text,
@@ -12,12 +14,11 @@ import {
   ScrollView,
   Clipboard
 } from 'react-native'
-import Modal from 'react-native-modal'
-import { Ionicons } from '@expo/vector-icons'
-import TouchableBounce from 'react-native/Libraries/Components/Touchable/TouchableBounce';
+
+import Icon from 'react-native-vector-icons/Ionicons';
+import * as FileSystem from 'expo-file-system';
 
 export default class FileSystemView extends React.Component {
-
   state = {
     folderList: [],
     currentDirectory: 'Home',
@@ -265,7 +266,7 @@ export default class FileSystemView extends React.Component {
         onPress={onPress}
         style={touchableStyle}
         key={key}>
-        <Ionicons
+        <Icon
           name={icon}
           size={32}
           style={styles.icons} />
@@ -414,7 +415,7 @@ export default class FileSystemView extends React.Component {
     if (this.state.currentDirectory !== 'Home') {
       backButton = (
         <TouchableOpacity onPress={() => this.goToPrevDirectory()} >
-          <Ionicons
+          <Icon
             name={'ios-arrow-round-back'}
             size={32}
             style={styles.backButton} />
@@ -426,7 +427,7 @@ export default class FileSystemView extends React.Component {
           <TouchableBounce
             onPress={() => this.addFileOptions()}
             style={styles.addButtonContainer}>
-            <Ionicons
+            <Icon
               name={'ios-add-outline'}
               size={35}
               style={styles.addButton} />
